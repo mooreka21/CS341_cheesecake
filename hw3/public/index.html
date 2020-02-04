@@ -1,0 +1,103 @@
+<!--Kayla Moore
+	CS 341
+	HW #2-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- link to my css file (comment out to see original version) -->
+		<link rel="stylesheet" type="text/css" href="stylesheets/cheesecake.css">
+		<!-- link to font used in css file -->
+		<link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
+		<!-- for formatting in css file -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- javascript hide/show content -->
+		<script src="javascripts/hide.js"></script>
+		<!-- javascript vegan alert-->
+        <script src="javascripts/vegan.js"></script>
+		<!-- title of website -->
+		<title>Cheesecake Order Form</title>
+	</head>
+	<!-- beginning of body -->
+	<body>
+		<h1>Cheesecake Order Form</h1>
+		<!-- utilized in css file for formatting -->
+		<div class="row">
+			<div class="column">
+				<!-- importing image from url -->
+				<img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" alt="Cheesecake photo" style="width:250px;height:250px;"></img>
+			</div>
+			<!-- utilized in css file for formatting -->
+			<div class="column">
+				<p>Quantity Topping</p>
+				<table>		<!-- using table to fix spacing issues -->
+					<tr>
+						<td>
+							<select id="num">	<!-- dropdown menu -->
+  								<option name="num">1</option>
+  								<option name="num">2</option>
+  								<option name="num">3</option>
+  								<option name="num">4</option>
+  								<option name="num">5</option>
+  								<option name="num">6</option>
+  								<option name="num">7</option>
+  								<option name="num">8</option>
+  								<option name="num">9</option>
+							</select><br>
+						</td>
+						<!-- list of flavors using radio -->
+						<td>
+							<input type="radio" name="type" value="Plain" checked> Plain<br>
+						</td>
+					</tr>
+  					<tr>
+  						<td></td>
+  						<td>
+  							<input type="radio"name="type" value="Cherry"> Cherry<br>
+ 	 					</td>
+  					</tr>
+  					<tr>
+  						<td></td>
+  							<td><input type="radio"name="type" value="Chocolate"> Chocolate
+  						</td>
+  					</tr>
+  				</table>
+  				<p>Notes:<br>
+  					<!-- text box -->
+  					<textarea id="text" rows="10" cols="50" placeholder="Enter any special instructions here."></textarea><br>
+  					<!-- submit button -->
+  					<button id="button" onclick="myFunction()">Submit</button>
+  					<!-- message returned -->
+  					<h2 id="message">Thank you! Your order has been placed!</h2>
+  					<h4 id="demo"></h4>
+				</p>
+			</div>
+		</div>
+		<!-- total orders from selected month, hover dropdown menu -->
+		<div class="dropdown">
+			<h3>Orders for 
+			<button class="dropbtn">Jan</button> <!-- default month -->
+			<div class="dropdown-content">
+				<a href="#">Jan</a>
+				<a href="#">Feb</a>
+				<a href="#">Mar</a>
+				<a href="#">Apr</a>
+				<a href="#">May</a>
+				<a href="#">Jun</a>
+				<a href="#">Jul</a>
+				<a href="#">Aug</a>
+				<a href="#">Sep</a>
+				<a href="#">Oct</a>
+				<a href="#">Nov</a>
+				<a href="#">Dec</a>
+			</div></h3>
+			<!-- for now, hardcoded past orders -->
+			<li>11 Cherry</li>
+			<li>17 Chocolate</li>
+			<li>31 Plain</li>
+		</div>
+	</body>
+</html>
+<!-- javascript hoverable dropdown manu -->
+<script src="javascripts/dropdown.js"></script>
+

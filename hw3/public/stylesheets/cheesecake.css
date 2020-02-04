@@ -1,0 +1,147 @@
+/* Kayla Moore
+   CS 341
+   HW #2 */
+
+body {    /* background of whole page */
+  background-color: antiquewhite;
+}
+
+h1 {    /* header */
+  background-color: burlywood;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-family: 'Cinzel Decorative';    /* found font on google */
+  font-size: 40px;
+  color: darkred;
+}
+
+img {    /* cheesecake image */
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 10px dotted darkred;
+}
+
+p {    /*paragraphs */
+	background-color: burlywood;
+	color: darkred;
+	text-align: center;
+	padding-top: 10px;
+  	padding-bottom: 10px;
+	font-family: verdana;
+	font-size: 20px;
+}
+
+table{    /* table */
+	padding-left: 300px;
+	color: darkred;
+	font-family: verdana;
+	font-size: 15px;
+}
+
+select{    /* dropdown */
+	background-color: burlywood;
+	color: darkred;
+	font-family: verdana;
+	font-size: 15px;
+}
+
+textarea{    /* text box */
+	background-color: antiquewhite;
+	color: burlywood;
+	font-family: verdana;
+	font-size: 15px;
+	height: 50px;
+}
+
+button{    /* submit button */
+	background-color: darkred;
+	color: burlywood;
+	font-family: verdana;
+	font-size: 15px;
+}
+
+.column {    /* column format from w3schools */
+	float: left;
+	width: 50%;
+	padding: 10px;
+}
+
+* {    /* found on w3schools to help with columns */
+	box-sizing: border-box;
+}
+
+h2 {    /* last month's orders */
+	text-align: left;
+	font-family: 'Cinzel Decorative';
+	font-size: 30px;
+	color: darkred;
+}
+
+h3 {    /* last month's orders */
+	text-align: left;
+	padding-left: 150px;
+	font-family: 'Cinzel Decorative';
+	font-size: 30px;
+	color: darkred;
+}
+
+li{    /* list of last month's orders */
+	text-align: left;
+	padding-left: 200px;
+	color: darkred;
+	font-family: verdana;
+	font-size: 15px
+}
+
+h4{    /* details of order */
+	color: darkred;
+	font-family: verdana;
+	font-size: 20px
+}
+
+/* recieved help from w3schools for dropdown css */
+.dropbtn {    /* dropdown button */
+	background-color: antiquewhite;
+	font-family: 'Cinzel Decorative';
+	font-size: 30px;
+	color: darkred;
+	border: 0.5px solid burlywood;
+}
+
+.dropdown:hover .dropbtn {    /* hover color for button */
+	background-color: burlywood;
+}
+
+.dropdown {    /* format of dropdown section */
+	position: relative;
+	display: inline-block;
+}
+
+.dropdown-content {    /* hidden dropdown menu, scrolling capability */
+	display: none;
+	background-color: #f1f1f1;
+	height: 100px;
+	overflow: scroll;
+}
+
+.dropdown-content a {    /* dropdown options */
+	color: darkred;
+	text-align: center;
+	font-family: verdana;
+	font-size: 20px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {    /* hover color for options */
+	background-color: burlywood;
+}
+
+.dropdown:hover .dropdown-content {    /* hover display */
+	display: block;
+  	max-height: 75px;
+  	overflow: auto;}
+
+
