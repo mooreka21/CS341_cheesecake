@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 /* GET order listing. */
-router.get('/', function(req, res, next) {
+router.post('/', function(req, res, next) {
 	var arr1 = { 
 		"data" : [ 
 			{ "toppings":"cherry",  "quantity":2 },
