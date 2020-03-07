@@ -36,15 +36,15 @@
 					<tr>
 						<td>
 							<select id="num">	<!-- dropdown menu -->
-  								<option name="num">1</option>
-  								<option name="num">2</option>
-  								<option name="num">3</option>
-  								<option name="num">4</option>
-  								<option name="num">5</option>
-  								<option name="num">6</option>
-  								<option name="num">7</option>
-  								<option name="num">8</option>
-  								<option name="num">9</option>
+  								<option value="1">1</option>
+  								<option value="2">2</option>
+  								<option value="3">3</option>
+  								<option value="4">4</option>
+  								<option value="5">5</option>
+  								<option value="6">6</option>
+  								<option value="7">7</option>
+  								<option value="8">8</option>
+  								<option value="9">9</option>
 							</select><br>
 						</td>
 						<!-- list of flavors using radio -->
@@ -80,18 +80,18 @@
 			<h3>Orders for 
 			<button class="dropbtn">Jan</button> <!-- default month -->
 			<div class="dropdown-content">
-				<a href="#">Jan</a>
-				<a href="#">Feb</a>
-				<a href="#">Mar</a>
-				<a href="#">Apr</a>
-				<a href="#">May</a>
-				<a href="#">Jun</a>
-				<a href="#">Jul</a>
-				<a href="#">Aug</a>
-				<a href="#">Sep</a>
-				<a href="#">Oct</a>
-				<a href="#">Nov</a>
-				<a href="#">Dec</a>
+				<a id="Jan">Jan</a>
+    			<a id="Feb">Feb</a>
+    			<a id="Mar">Mar</a>
+				<a id="Apr">Apr</a>
+    			<a id="May">May</a>
+    			<a id="Jun">Jun</a>
+				<a id="Jul">Jul</a>
+				<a id="Aug">Aug</a>
+    			<a id="Sep">Sep</a>
+    			<a id="Oct">Oct</a>
+				<a id="Nov">Nov</a>
+    			<a id="Dec">Dec</a>
 			</div></h3>
 			<!-- for now, hardcoded past orders -->
 			<li id="cherryID">11 Cherry</li>
@@ -102,4 +102,5 @@
 </html>
 <!-- javascript hoverable dropdown manu -->
 <script src="javascripts/dropdown.js"></script>
+<script src="javascripts/hide.js"></script>
 

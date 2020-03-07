@@ -1,3 +1,4 @@
+// Kayla Moore
 //function that gives vegan alert and prints customers order
 function myFunction() {
 	var textarea = document.getElementById("text");
@@ -10,11 +11,12 @@ function myFunction() {
 		alert("Error! Cheesecakes contain dairy!");
 			$(document).ready(function(){
 			$("h2").hide();
+			$("demo").hide();
 			$("p").show();
 			$("table").show();
 			});
 	}
 	else{ //if order is not vegan, the order goes through and prints order
-		document.getElementById("demo").innerHTML =quantity.value + " " + topping.value + " Cheesecake(s) " + textvalue;
+		document.getElementById("demo").innerHTML = quantity.value + " " + topping.value + " Cheesecake(s) " + textvalue;
 	}
 }

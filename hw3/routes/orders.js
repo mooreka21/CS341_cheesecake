@@ -1,18 +1,21 @@
+// Kayla Moore
+
 var express = require('express');
 var router = express.Router();
+const db = require('./dbms');
 
 /* GET order listing. */
 router.post('/', function(req, res, next) {
-	var arr1 = { 
-		"data" : [ 
-			{ "toppings":"cherry",  "quantity":2 },
-			{ "toppings":"plain",  "quantity":6 },
-            { "toppings":"chocolate",  "quantity":3 },
-            	]
-	};
-	// turn arr1 into a string
-	var myJSON1 = JSON.stringify(arr1);
-	res.send(myJSON1);
+	let query = "SELECT * FROM ORDERS WHERE MONTH = '" + req.body.month + "';";
+	// send query to database and retreve order data
+	db.dbquery(query, (err, result) => {
+		if (!err) {
+			console.log("orders success");
+			res.send(result);	
+		}
+		else {
+			console.log(err);
+		}
+	});
 });
-
 module.exports = router;
